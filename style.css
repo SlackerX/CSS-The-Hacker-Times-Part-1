@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Roboto+Slab:wght@500&family=Source+Sans+Pro:wght@200;400;600&display=swap');
-
+/* 
+* {
+    border: 1px solid black;
+} */
 .date {
     color: #777;
 }
@@ -18,10 +21,17 @@ h1 {
 }
 
 nav {
+    background-color: white;
     margin-left: -10px;
     border-top: 1px solid black;
     border-bottom: 1px solid black;
+    position: sticky;
+    top: 0;
     
+}
+
+ul {
+    margin: 0 auto;
 }
 
 nav :hover {
@@ -35,6 +45,7 @@ nav li {
 
 nav a {
     text-decoration: none;
+    font-size: 1em;
     color: #777;
     margin: 5px;
 }
@@ -76,8 +87,8 @@ section > p {
     grid-template-columns: repeat(3, 1fr) ;
     gap: 10px;
     padding: 20px;
-    margin-left: 10px;
-}
+    margin-left: 20px;
+   }
 
 .column1 {
     grid-column: 1;
@@ -94,21 +105,21 @@ section > p {
     grid-row: 1;
 }
 
-.column1 img {
+.column1 img, .column2 img, .column3 img {
     width: 100px;
 }
 
-.column2 img {
-    width: 100px;
-}
-
-.column3 img {
+.column1 > p, .column2 > p, .column3 > p {
     width: 100px;
 }
 
 .footer li {
     display: inline-block;
     list-style-type: none;
+}
+
+.footer li :hover {
+    color: black;
 }
 
 .footer a {
@@ -120,7 +131,7 @@ section > p {
 .footer {
     text-align: center;
     margin-top: 20px;
-    margin-left: -10px;
+    margin-left: -30px;
     /* border-top: 1px solid black;
     border-bottom: 1px solid black; */
 }
